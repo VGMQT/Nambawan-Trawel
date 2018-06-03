@@ -1,0 +1,17 @@
+.sprite {
+  background-image: url('../assets/img/sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-space {
+  width: 77px;
+  height: 82px;
+  background-position: -10px -10px;
+}
+
+.sprite-world {
+  width: 75px;
+  height: 75px;
+  background-position: -107px -10px;
+}

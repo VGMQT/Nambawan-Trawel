@@ -1,0 +1,24 @@
+{
+  "name": "nambawan-trawel",
+  "description": "nambawan-trawel",
+  "main": "index.html",
+  "authors": [
+    "Vlad Tepes <vg.email.2@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nambawan-trawel"
+  ],
+  "homepage": "https://github.com/VGMQT/Portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg4everybody": "^2.1.9",
+    "jquery": "^3.3.1"
+  }
+}
