@@ -1,0 +1,115 @@
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: #ffffff;
+}
+
+.menu__btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: rgba(#000000, .5);
+  span{
+    text-transform: uppercase;
+  }
+  &:hover{
+    .svg_menu{
+      animation-name: menu-fill;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+.svg_menu{
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+  fill: #000000;
+}
+
+.menu__socials{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  transform: rotate(-90deg);
+  span{
+    @include rale(reg);
+    color: rgba(#000000, .4);
+    text-transform: uppercase;
+    transition: all .5s;
+  }
+}
+
+.menu__socials-item{
+  margin-right: 35px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.menu__socials-link{
+  display: flex;
+  align-items: center;
+  &:hover{
+    .svg_social{
+      fill: #000000;
+    }
+    span{
+      color: #000000;
+    }
+  }
+}
+
+.svg_social{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  fill: rgba(#000000, .4);
+  transition: all .5s;
+}
+
+@keyframes menu-fill{
+  0% {
+    fill: #000000;
+  }
+  10%{
+    fill: #FFFF00;
+  }
+  20%{
+    fill: #6D4C41;
+  }
+  30%{
+    fill: #00BCD4;
+  }
+  40%{
+    fill: $accentcolor
+  }
+  50%{
+    fill: #212121;
+  }
+  60%{
+    fill: #E91E63;
+  }
+  70%{
+    fill: #c62828;
+  }
+  80%{
+    fill: #F4511E;
+  }
+  90%{
+    fill: #9C27B0;
+  }
+  100%{
+    fill: #000000;
+  }
+}

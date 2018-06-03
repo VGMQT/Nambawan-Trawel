@@ -1,5 +1,5 @@
 //vars
-
+$accentcolor: #10e08b;
 
 //layout
 @import "_misc/normalize";
@@ -7,3 +7,17 @@
 @import "_misc/mixins";
 @import "_misc/adjustment";
 @import "_misc/sprite";
+
+//elements
+@import "elements/elements";
+@import "elements/menu";
+
+//plugins
+@import "plugins/onepage-scroll";
+
+//reset
+@import "_misc/resets";
+
+//sections
+@import "sections/interlude";
+@import "sections/video";
