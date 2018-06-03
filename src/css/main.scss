@@ -11,9 +11,10 @@ $accentcolor: #10e08b;
 //elements
 @import "elements/elements";
 @import "elements/menu";
+@import "elements/footer";
 
 //plugins
-@import "plugins/onepage-scroll";
+@import "plugins/jquery.fullpage";
 
 //reset
 @import "_misc/resets";
@@ -21,3 +22,4 @@ $accentcolor: #10e08b;
 //sections
 @import "sections/interlude";
 @import "sections/video";
+@import "sections/photos";

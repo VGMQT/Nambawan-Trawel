@@ -51,7 +51,7 @@ gulp.task('production', ['clean', 'uglify-js'], function(){
 
 gulp.task('dev', ['build', 'watch', 'browser-sync']);
 
-gulp.task('build', ['svgSpriteBuild', 'html', 'css', 'js', 'assets']);
+gulp.task('build', ['svgSpriteBuild', 'html', 'css', 'assets']);
 
 gulp.task('watch', function(){
     gulp.watch('src/css/**/*.scss', ['css']);

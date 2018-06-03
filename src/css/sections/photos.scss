@@ -1,0 +1,35 @@
+.photos{
+  @include rale();
+  color: #000000;
+}
+
+.photos__title{
+  text-align: center;
+  font-size: 48px;
+}
+
+.photos__item{
+  display: flex;
+}
+
+.photos__gallery{
+  width: 50%;
+}
+
+.photos__desc{
+  @include rale(light);
+  width: 50%;
+  padding: 100px 0;
+  text-align: center;
+  font-size: 32px;
+  color: #999999;
+  p{
+    max-width: 300px;
+    margin: auto;
+  }
+  em{
+    display: block;
+    font-style: normal;
+    color: $accentcolor;
+  }
+}
