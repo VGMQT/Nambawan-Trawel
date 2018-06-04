@@ -7,6 +7,9 @@
 }
 
 .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   padding: 50px 100px 0 50px;
   background: rgba(#15181e, .7);
@@ -16,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 115px;
 }
 
 .logo{
@@ -39,16 +41,13 @@
 
 .hotline__number{
   font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 .hotline__desc{
   @include rale(sbold);
   font-size: 11px;
-}
-
-.pros{
-  margin-bottom: 65px;
 }
 
 .pros__head{

@@ -22,7 +22,7 @@
   }
   &:hover{
     .svg_menu{
-      animation-name: menu-fill;
+      animation-name: colors;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-fill-mode: backwards;
@@ -78,7 +78,7 @@
   transition: all .5s;
 }
 
-@keyframes menu-fill{
+@keyframes colors{
   0% {
     fill: #000000;
   }

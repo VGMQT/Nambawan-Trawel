@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=1420">
     <title>Nambawan Trawel</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
-    
+    <link rel="stylesheet" href="css/vendor.css">
 </head>
 <body>
 <aside class="menu">
@@ -71,7 +70,9 @@
     </section>
     <section class="section video">
         <div class="video__inner">
-            <div class="video__play"></div>
+            <div class="video__play">
+                <iframe id="video" src="https://www.youtube.com/embed/GyCv_S42Tak?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
             <div class="video__desc">
                 <div class="video__desc-title">
                     Только с нами вы сможете знатно угареть!
@@ -95,45 +96,88 @@
         </div>
     </section>
     <section class="section photos">
-        <div class="photos__title">Как это было</div>
-        <div class="photos__list">
-            <div class="photos__item">
-                <div class="photos__gallery">
-                </div>
-                <div class="photos__desc">
-                    <p>
-                        Находим <em>сильные стороны</em> вашей команды!
-                    </p>
-                </div>
-            </div>
+        <div class="photos__inner">
+            <div class="photos__title">Как это было</div>
+            <div class="photos__list">
+                <div class="photos__item">
+                    <div class="photos__item-main">
+                        <div class="photos__gallery">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slider/1.jpg" alt="Image">
+                                        <p>Восхождение</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slider/2.jpg" alt="Image">
+                                        <p>Lorem ipsum.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slider/3.jpg" alt="Image">
+                                        <p>Lorem ipsum dolor.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
 
-            <div class="photos__item">
-                <div class="photos__gallery">
+                                <div class="swiper-button-pr">
+                                    <svg>
+                                        <use xlink:href="assets/img/svg/sprite/sprite.svg#pr-button"></use>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-nx">
+                                    <svg>
+                                        <use xlink:href="assets/img/svg/sprite/sprite.svg#nx-button"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photos__desc">
+                            <p>
+                                Находим <em>сильные стороны</em> вашей команды!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="photos__annotation">
+                        <p>Покорили ледяные вершины с командой <em>HBO</em></p>
+                    </div>
                 </div>
-                <div class="photos__desc">
-                    <p>
-                        Находим <em>сильные стороны</em> вашей команды!
-                    </p>
-                </div>
-            </div>
+                <div class="photos__item">
+                    <div class="photos__item-main">
+                        <div class="photos__desc">
+                            <p>
+                                Создаём самую настоящую <em>dream-team!</em>
+                            </p>
+                        </div>
+                        <div class="photos__gallery">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slider/4.jpg" alt="Image">
+                                        <p>Погружение</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slider/5.jpg" alt="Image">
+                                        <p>Lorem ipsum.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
 
-            <div class="photos__item">
-                <div class="photos__gallery">
-                </div>
-                <div class="photos__desc">
-                    <p>
-                        Находим <em>сильные стороны</em> вашей команды!
-                    </p>
-                </div>
-            </div>
-
-            <div class="photos__item">
-                <div class="photos__gallery">
-                </div>
-                <div class="photos__desc">
-                    <p>
-                        Находим <em>сильные стороны</em> вашей команды!
-                    </p>
+                                <div class="swiper-button-pr">
+                                    <svg>
+                                        <use xlink:href="assets/img/svg/sprite/sprite.svg#pr-button"></use>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-nx">
+                                    <svg>
+                                        <use xlink:href="assets/img/svg/sprite/sprite.svg#nx-button"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photos__annotation">
+                        <p>Плавали за рыбками с <em>National Geographic</em></p>
+                    </div>
                 </div>
             </div>
         </div>

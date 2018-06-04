@@ -1,15 +1,35 @@
 .photos{
   @include rale();
+  padding-top: 75px;
+  padding-bottom: 150px;
   color: #000000;
+}
+
+.photos__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .photos__title{
   text-align: center;
   font-size: 48px;
+  margin-bottom: 50px;
 }
 
 .photos__item{
+  text-align: right;
+  &:nth-child(even){
+    .photos__annotation{
+      display: inline-block;
+    }
+  }
+}
+
+.photos__item-main{
   display: flex;
+  margin-bottom: 10px;
 }
 
 .photos__gallery{
@@ -29,6 +49,23 @@
   }
   em{
     display: block;
+    font-style: normal;
+    color: $accentcolor;
+  }
+}
+
+.photos__annotation{
+  @include rale(reg);
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  p{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+  }
+  em{
+    @include rale();
     font-style: normal;
     color: $accentcolor;
   }
