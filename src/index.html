@@ -11,14 +11,35 @@
     <!-- endbower -->
     <!-- endbuild -->
 </head>
-<body>
+<body class="body">
 <aside class="menu">
     <a href="#" class="menu__btn">
         <svg class="svg_menu">
             <use xlink:href="assets/img/svg/sprite/sprite.svg#menu"></use>
         </svg>
-        <span>Меню</span>
+        <svg class="svg_hide">
+            <use xlink:href="assets/img/svg/sprite/sprite.svg#back"></use>
+        </svg>
+        <span class="menu__btn-menu">Меню</span>
+        <span class="menu__btn-hide">Свернуть</span>
     </a>
+    <div class="menu__list">
+        <div class="menu__item">
+            <a href="#" class="menu__link"><div>Greece</div></a>
+        </div>
+        <div class="menu__item">
+            <a href="#" class="menu__link"><div>Japan</div></a>
+        </div>
+        <div class="menu__item">
+            <a href="#" class="menu__link"><div>Netherlands</div></a>
+        </div>
+        <div class="menu__item">
+            <a href="#" class="menu__link"><div>Deserts</div></a>
+        </div>
+        <div class="menu__item">
+            <a href="#" class="menu__link"><div>Moon</div></a>
+        </div>
+    </div>
     <div class="menu__socials">
         <div class="menu__socials-item">
             <a href="#" class="menu__socials-link">
@@ -35,6 +56,26 @@
                 </svg>
                 <span>vkontakte</span>
             </a>
+        </div>
+    </div>
+    <div class="menu__socials_col-wrapper">
+        <div class="menu__socials_col">
+            <div class="menu__socials-item">
+                <a href="#" class="menu__socials-link">
+                    <svg class="svg_social">
+                        <use xlink:href="assets/img/svg/sprite/sprite.svg#inst"></use>
+                    </svg>
+                    <span>instagram</span>
+                </a>
+            </div>
+            <div class="menu__socials-item">
+                <a href="#" class="menu__socials-link">
+                    <svg class="svg_social">
+                        <use xlink:href="assets/img/svg/sprite/sprite.svg#vk"></use>
+                    </svg>
+                    <span>vkontakte</span>
+                </a>
+            </div>
         </div>
     </div>
 </aside>
