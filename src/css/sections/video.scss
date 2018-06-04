@@ -52,14 +52,10 @@
   padding: 30px 15px;
   margin-right: 20px;
   background: #f2f2f2;
-  i{
-    margin-bottom: 15px;
-  }
   &:last-child{
     margin-right: 0;
   }
-}
-
-.ytp-large-play-button-bg{
-  fill: $accentcolor !important;
+  i{
+    margin-bottom: 15px;
+  }
 }
