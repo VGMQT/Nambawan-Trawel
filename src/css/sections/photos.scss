@@ -64,9 +64,50 @@
     max-width: 300px;
     margin: auto;
   }
-  em{
+  a{
     @include rale();
-    font-style: normal;
+    color: $accentcolor;
+    &:hover{
+      animation-name: colors-accent;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+@keyframes colors-accent {
+  0% {
+    color: $accentcolor;
+  }
+  10% {
+    color: #000000;
+  }
+  20% {
+    color: #6D4C41;
+  }
+  30% {
+    color: #00BCD4;
+  }
+  40% {
+    color: #FFFF00;
+  }
+  50% {
+    color: #212121;
+  }
+  60% {
+    color: #E91E63;
+  }
+  70% {
+    color: #c62828;
+  }
+  80% {
+    color: #F4511E;
+  }
+  90% {
+    color: #9C27B0;
+  }
+  100% {
     color: $accentcolor;
   }
 }
